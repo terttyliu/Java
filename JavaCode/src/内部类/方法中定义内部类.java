@@ -1,4 +1,4 @@
-package javaLearn2;
+package 内部类;
 
 /**
  * 方法中定义内部类。

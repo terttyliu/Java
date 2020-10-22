@@ -1,4 +1,4 @@
-package javaLearn2;
+package 内部类;
 
 /**
  * 以static定义内部类的形式来讲并不常用，
