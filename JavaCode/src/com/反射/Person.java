@@ -1,12 +1,18 @@
 package com.反射;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Objects;
+
 /**
  * @author pjliu
  */
-public class Person<T> extends Animal<T>{
-    static final int anInt=11939;
+public class Person<T> extends Animal<T> {
+    static final int anInt = 11939;
     private String name;
     public int age;
+
     public Person() {
     }
 
@@ -35,11 +41,12 @@ public class Person<T> extends Animal<T>{
         this.name = name;
     }
 
-    public void show(){
+    public void show() {
         System.out.println("I'm a good man");
     }
-    private String showNation(String nation){
-        System.out.println("我的国籍是"+nation);
+
+    private String showNation(String nation) {
+        System.out.println("我的国籍是" + nation);
         return nation;
     }
 
@@ -49,5 +56,32 @@ public class Person<T> extends Animal<T>{
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    public static List<Person> getPersons() {
+        List<Person> list = new ArrayList<>();
+        list.add(new Person("刘鹏杰1", 232));
+        list.add(new Person("刘鹏杰2", 2233));
+        list.add(new Person("刘鹏杰3", 253));
+        list.add(new Person("刘鹏杰4", 27653));
+        list.add(new Person("刘鹏杰5", 2376));
+        list.add(new Person("刘鹏杰6", 234));
+        list.add(new Person("刘鹏杰7", 1123));
+        list.add(new Person("刘鹏杰7", 1123));
+        return list;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person<?> person = (Person<?>) o;
+        return age == person.age &&
+                Objects.equals(name, person.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
     }
 }
