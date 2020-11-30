@@ -14,7 +14,7 @@ public class StreamTest {
     public void test() {
         Collection<User> list = new ArrayList<>();
         for (int i = 0; i < 6; i++) {
-            list.add(new User(i, Character.toString('A' + i), i + 20));
+            list.add(new User(i, Character.toString((char) ('A' + i)), i + 20));
         }
         Stream<User> stream = list.stream();
         stream.filter(user -> user.age % 2 == 0).map(user -> {

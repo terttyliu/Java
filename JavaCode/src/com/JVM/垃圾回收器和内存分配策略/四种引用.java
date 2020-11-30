@@ -2,7 +2,6 @@ package com.JVM.垃圾回收器和内存分配策略;
 
 import org.junit.jupiter.api.Test;
 
-import java.awt.desktop.SystemSleepEvent;
 import java.io.IOException;
 import java.lang.ref.*;
 import java.util.LinkedList;

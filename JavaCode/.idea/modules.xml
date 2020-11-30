@@ -3,9 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaCode.iml" filepath="$PROJECT_DIR$/JavaCode.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MavenTest/MavenTest.iml" filepath="$PROJECT_DIR$/MavenTest/MavenTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MavenTest/WarTest/WarTest.iml" filepath="$PROJECT_DIR$/MavenTest/WarTest/WarTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jDBC/jDBC.iml" filepath="$PROJECT_DIR$/jDBC/jDBC.iml" />
     </modules>
   </component>
 </project>

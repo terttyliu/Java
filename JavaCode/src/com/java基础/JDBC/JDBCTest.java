@@ -16,7 +16,6 @@ public class JDBCTest {
     @Test
     public void testJDBC1() throws ClassNotFoundException {
         //连接数据库
-
         Class<?> aClass = Class.forName("com.mysql.jdbc.driver");
     }
 }
