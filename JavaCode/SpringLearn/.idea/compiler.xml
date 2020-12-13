@@ -7,11 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringLearn" />
-        <module name="jDBC" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="jDBC" target="11" />
       <module name="SpringLearn" target="1.5" />
     </bytecodeTargetLevel>
   </component>
